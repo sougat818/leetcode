@@ -1,0 +1,24 @@
+name: Java CI with Gradle
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Run the Gradle package task
+        run: for d in java/*/ ; do (cd "$d" && gradle build); done
+      - name: Run the Gradle package task
+        run: for d in java/*/ ; do (cd "$d" && gradle check); done
