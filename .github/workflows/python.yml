@@ -36,7 +36,7 @@ jobs:
         
     - name: Analysing the code with pylint
       run: |
-        for d in python/*/ ; do (cd "$d" && pylint $(git ls-files '*.py')); done
+        for d in python/*/ ; do (cd "$d" && pylint --exit-zero $(git ls-files '*.py')); done
         
     - name: Test with pytest
       run: |
