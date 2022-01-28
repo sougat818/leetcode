@@ -1,4 +1,4 @@
-[![Go](https://github.com/sougat818/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/sougat818/leetcode/actions/workflows/go.yml) [![Java CI with Gradle](https://github.com/sougat818/leetcode/actions/workflows/gradle.yml/badge.svg)](https://github.com/sougat818/leetcode/actions/workflows/gradle.yml) [![Python](https://github.com/sougat818/leetcode/actions/workflows/python.yml/badge.svg)](https://github.com/sougat818/leetcode/actions/workflows/python.yml)
+[![Go](https://github.com/sougat818/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/sougat818/leetcode/actions/workflows/go.yml) [![Java](https://github.com/sougat818/leetcode/actions/workflows/java.yml/badge.svg)](https://github.com/sougat818/leetcode/actions/workflows/java.yml) [![Python](https://github.com/sougat818/leetcode/actions/workflows/python.yml/badge.svg)](https://github.com/sougat818/leetcode/actions/workflows/python.yml)
 
 
 | #   | Title                                                                    | Solution                                                                                   | Difficulty |
