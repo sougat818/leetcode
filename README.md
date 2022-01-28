@@ -4,6 +4,6 @@
 
 | #   | Title                                                                    | Solution                                                                                   | Difficulty |
 |-----|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------| ---------- |
-| 1   | [Two Sum](https://leetcode.com/problems/two-sum/)                        | [Go](go/two-sum/two_sum.go), [Java](java/two-sum/src/main/java/TwoSum.java)                                         |Easy|
+| 1   | [Two Sum](https://leetcode.com/problems/two-sum/)                        | [Go](go/two-sum/two_sum.go), [Java](java/two-sum/src/main/java/TwoSum.java), [Python](python/two-sum/two_sum.py)                                          |Easy|
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](java/binary-tree-preorder-traversal/src/main/java/BinaryTreePreorderTraversal.java) |Easy|
 
