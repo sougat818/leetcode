@@ -11,6 +11,6 @@ class LongestCommonPrefix:
         shortest = min(strs, key=len)
         for i, ch in enumerate(shortest):
             for string in strs:
-                if string[i] != ch :
+                if string[i] != ch:
                     return string[0:i]
         return shortest
