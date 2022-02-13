@@ -10,10 +10,10 @@ public class LongestCommonPrefixTest {
 
   private static Stream<Arguments> longestCommonPrefix() {
     return Stream.<Arguments>builder()
-      .add(Arguments.of("fl", new String[]{"flower", "flow", "flight"}))
-      .add(Arguments.of("", new String[]{"dog", "racecar", "car"}))
-      .add(Arguments.of("a", new String[]{"ab", "a"}))
-      .build();
+        .add(Arguments.of("fl", new String[]{"flower", "flow", "flight"}))
+        .add(Arguments.of("", new String[]{"dog", "racecar", "car"}))
+        .add(Arguments.of("a", new String[]{"ab", "a"}))
+        .build();
   }
 
   @ParameterizedTest

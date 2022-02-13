@@ -1,8 +1,9 @@
+import static java.util.Objects.isNull;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import static java.util.Objects.isNull;
 
 class BinaryTreePreorderTraversal {
   public List<Integer> preorderTraversal(TreeNode root) {
