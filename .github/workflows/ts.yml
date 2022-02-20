@@ -1,0 +1,33 @@
+name: TS
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [17.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+    - run: for d in javascript/*/ ; do (cd "$d" && npm ci); done
+    - run: for d in javascript/*/ ; do (cd "$d" && npm run build --if-present); done
+    - run: for d in javascript/*/ ; do (cd "$d" && npm test); done
+    - run: npm install eslint --global && for d in javascript/*/ ; do (cd "$d" && npm run lint); done
+    - run: npm install prettier --global && for d in javascript/*/ ; do (cd "$d" && prettier -c .); done
+    - run: for d in javascript/*/ ; do (cd "$d" && npx depcheck); done
+    - run: for d in javascript/*/ ; do (cd "$d" && npx npm-check -s); done
