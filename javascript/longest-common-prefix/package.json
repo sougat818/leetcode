@@ -1,4 +1,7 @@
 {
+  "name": "longest-common-prefix",
+  "version": "1.0.0",
+  "author": "",
   "devDependencies": {
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.4.0",
