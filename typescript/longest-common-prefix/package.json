@@ -1,16 +1,16 @@
 {
-  "name": "two-sum",
+  "name": "longest-common-prefix",
   "version": "1.0.0",
   "scripts": {
-    "test": "npx jest",
-    "lint": "npx eslint && prettier -c ."
+    "lint": "npx eslint && prettier -c .",
+    "test": "npx jest"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
-    "@types/jest": "^27.4.0",
-    "@typescript-eslint/eslint-plugin": "^5.12.0",
-    "@typescript-eslint/parser": "^5.12.0",
-    "eslint": "^8.9.0",
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.4.0",
     "jest": "^27.5.1",
     "prettier": "2.5.1",
